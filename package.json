@@ -4,7 +4,7 @@
   "description": "react-redux-demos",
   "main": "index.js",
   "scripts": {
-    "build": "./node_modules/.bin/webpack-dev-server"
+    "dev": "./node_modules/.bin/webpack-dev-server"
   },
   "repository": {
     "type": "git",
