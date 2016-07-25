@@ -1,7 +1,5 @@
 import "react";
-// import Redux from "redux";
-var redux = require("redux");
-// import redux from "redux";
+import { createStore } from "redux";
 import "./index.css";
 //actions:
 function addType(){
@@ -30,7 +28,7 @@ function counter(state, action){
 
 
 //store
-var store = redux.createStore(counter);
+let store = createStore(counter);
 
 function addDispatch(){
 	return store.dispatch(addType());
@@ -41,8 +39,8 @@ function subDispatch(){
 }
 
 //render
-var addBtn = document.getElementById("increment");
-var subBtn = document.getElementById("decrement"); 
+let addBtn = document.getElementById("increment");
+let subBtn = document.getElementById("decrement"); 
 
 addBtn.addEventListener('click',addDispatch);
 subBtn.addEventListener('click',subDispatch);
