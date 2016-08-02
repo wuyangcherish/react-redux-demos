@@ -6,7 +6,7 @@ module.exports = {
   entry:[
     'webpack-dev-server/client?http://localhost:8080',
     'webpack/hot/only-dev-server',
-    './index'
+    './index.js'
   ],
   output:{
     path: path.join(__dirname, 'dist'),
@@ -18,13 +18,11 @@ module.exports = {
   ],
   module:{
     loaders:[
-
-      {test:/\.js[x]?$/, loaders:['react-hot', 'babel-loader']},
-      {test:/\.css$/, loader:'style!css',}
+      {test:/\.js$/, loaders:['react-hot', 'babel-loader'],exclude:/node_modules/}
     ]
   },
   resolve:{
     extensions:['','.js','.jsx','.json','css']
   },
-  devtool:'cheap-module-source-map',
+  devtool:'cheap-module-source-map'
 }
