@@ -1,26 +1,14 @@
 {
-  "name": "redux-counter",
+  "name": "counter-test",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/wuyangcherish/react-redux-demos.git"
-  },
-  "keywords": [
-    "redux",
-    "react"
-  ],
-  "author": "moyu",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/wuyangcherish/react-redux-demos/issues"
-  },
-  "homepage": "https://github.com/wuyangcherish/react-redux-demos#readme",
-  "devDependencies": {
+    "devDependencies": {
     "babel-core": "^6.0.20",
     "babel-eslint": "^4.1.3",
     "babel-loader": "^6.0.1",
